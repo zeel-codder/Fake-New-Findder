@@ -133,8 +133,10 @@ dmypy.json
 
 # dependencies
 /node_modules
+*/node_modules
 /.pnp
 .pnp.js
+node_modules/
 
 # testing
 /coverage
