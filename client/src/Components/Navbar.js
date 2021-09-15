@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Home } from './Home';
 import { Login } from './Login.js';
 import { SignUp } from './SignUp';
-import '../CSS/navbar.css'
+import '../CSS/navbar.css';
 export const Navbar = () => {
     return (
         <div>

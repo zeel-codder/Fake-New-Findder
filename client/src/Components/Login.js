@@ -11,7 +11,7 @@ export const Login = () => {
     }
     return (
         <>
-        <div className="container">
+        <div className="container1">
             <form action="POST">
                <input type="email" placeholder='Enter Email Here' value={email} onChange={(e)=>{setEmail(e.target.value)}}></input> <br/>
                <input type="password" placeholder='Enter Password Here' value={password} onChange={(e)=>{setPassword(e.target.value)}}></input><br/>

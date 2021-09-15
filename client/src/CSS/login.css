@@ -1,9 +1,9 @@
-.container{
+.container1{
     display: flex;
     border-radius: 33px;
-    background-color: rgb(230, 137, 137);
+    background-color: rgb(212, 30, 30);
     width: 400px;
-    height: 300px;
+    height: 250px;
     position: absolute;
     left: 50%;
     top: 50%;
