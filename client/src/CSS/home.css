@@ -57,3 +57,9 @@ body {
   button a{
       text-decoration: none;
   }
+  .search{
+    border:2px solid black;
+    display: block;
+    margin: 12px auto;
+    outline: none;
+  }

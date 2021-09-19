@@ -16,7 +16,7 @@ export const Navbar = () => {
         </Fade>
         <Slide left>
           <ul>
-            <li className='links'><Link className='inside' to={'/'} > Home </Link></li>
+            <li className='links'><Link className='inside' to={'/home'} > Home </Link></li>
             <li className='links'><Link className='inside' to={'/login'} >Login</Link></li>
             <li className='links'><Link className='inside' to={'/signup'} >SignUp</Link></li>
           </ul>
@@ -24,7 +24,7 @@ export const Navbar = () => {
           </div>
           <div>  
           <Switch>
-              <Route exact path='/' component={Home} />
+              <Route exact path='/home' component={Home} />
               <Route path='/login' component={Login} />
               <Route path='/signup' component={SignUp} />
           </Switch>
