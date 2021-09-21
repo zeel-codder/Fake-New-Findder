@@ -145,6 +145,7 @@ button a {
   flex-direction: row;
   background-color: rgb(0, 0, 0);
   width:100%;
+  /* padding: 0.3rem; */
 }
 .navbar{
   flex-direction:column;
@@ -235,7 +236,7 @@ button {
   display: block;
   /* margin: auto; */
   border-radius: 0.3rem;
-  margin: 0 auto;
+  margin: 13px auto;
   padding: 0.6rem;
   width: 90%;
   outline: none;
@@ -281,6 +282,7 @@ button:hover {
   .home input,.home button {
 
     width: 90%;
+
   
   }
   .nav,.nav ul{

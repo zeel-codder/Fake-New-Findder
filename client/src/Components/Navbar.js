@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import { Home } from './Home';
 import { Login } from './Login.js';
 import { SignUp } from './SignUp';
@@ -43,6 +43,9 @@ export const Navbar = () => {
           </div>
           <div>  
           <Switch>
+          <Route exact path='/'>
+              <Redirect to="/home"/>
+              </Route>
               <Route exact path='/home' component={Home} />
               <Route path='/login' component={Login} />
               <Route path='/signup' component={SignUp} />
