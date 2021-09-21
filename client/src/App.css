@@ -1,3 +1,33 @@
+body{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  --font-size:1.2rem;
+  --background-color:black;
+}
+
+
+/**C*/
+
+.flex{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+
+.flex-column{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  
+}
+.none{
+  display: none;
+}
+
+
+/* 1.Home */
 .App {
   text-align: center;
 }
@@ -35,4 +65,201 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.outcontain2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: black;
+  padding: 13px;
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 9px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #1a191913;
+  color: black;
+  transform: rotateY(180deg);
+}
+button a {
+  text-decoration: none;
+}
+.search {
+  border: 2px solid black;
+  display: block;
+  margin: 12px auto;
+  outline: none;
+}
+
+/* 2.navbar */
+
+.nav,.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+}
+.bar{
+  /* justify-self: flex-end; */
+  align-self: center;
+  transform:scale(1.7);
+  padding: 1rem .5rem;
+  color: white;
+  cursor:pointer;
+
+}
+
+.title {
+  color: white;
+  margin-left: 12px;
+}
+ul {
+  display:flex;
+  list-style: none;
+  right: 10px;
+  padding: .8rem;
+  /* position: absolute; */
+  /* border: 2px solid red; */
+}
+ul > li {
+  display: inline;
+  padding: 13px;
+}
+.links > .inside {
+  color: white;
+  text-decoration: none;
+  flex-direction: row;
+  padding: .3rem;
+}
+.links > .inside:hover {
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+}
+
+/* 3.Auth/ */
+
+.container1 {
+  display: flex;
+  /* border-radius: 33px; */
+  background-color: var(--background-color);
+  width: 50%;
+  min-height: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding:1rem;
+  align-items: center;
+  justify-self: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+form > h1{
+  color: wheat;
+  text-align: center;
+}
+form {
+  width:100%;
+  margin: auto;
+  
+  padding: 0.7rem;
+}
+
+input {
+  border-radius: 0.3rem;
+  margin: 0.3rem 0;
+  padding: 0.6rem;
+  width: 90%;
+  border-style: none;
+}
+button {
+  display: block;
+  /* margin: auto; */
+  border-radius: 0.3rem;
+  margin: 0 auto;
+  padding: 0.6rem;
+  width: 90%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 800px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  /* .navbar{} */
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar{
+    display: block;
+    align-self: flex-start;
+  }
+  .nav{
+    position: absolute;
+    top: 9%;
+    z-index: 12;
+    width: 100%;
+    transition: all .3s;
+    transform:translateX(-100%)
+  }
+  .nav,.nav ul{
+    flex-direction: column;
+  }
+  .show{
+    transform:translateX(0%)
+  }
+  
 }

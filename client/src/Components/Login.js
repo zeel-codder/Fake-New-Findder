@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/login.css';
+// import '../CSS/login.css';
 import { useState } from 'react';
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -12,12 +12,14 @@ export const Login = () => {
     return (
         <>
         <div className="container1">
-            <form action="POST">
+            <form action="POST" className="flex-column">
+                <h1>Login</h1>
                <input type="email" placeholder='Enter Email Here' value={email} onChange={(e)=>{setEmail(e.target.value)}}></input> <br/>
                <input type="password" placeholder='Enter Password Here' value={password} onChange={(e)=>{setPassword(e.target.value)}}></input><br/>
                <button onClick={Verify}>Login</button>
             </form>
         </div>
+
         </>
     )
 }
