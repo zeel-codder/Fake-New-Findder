@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"cd client && npm run build",
     "dev": "nodemon index.js",
     "run": "concurrently \"cd server && npm run dev\" \"cd client && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
