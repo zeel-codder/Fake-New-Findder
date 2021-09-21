@@ -99,6 +99,7 @@ body {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 9px;
+  color:white;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -116,12 +117,15 @@ body {
 
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  color: white;
 }
 
+h1{
+  padding: 0;
+}
 .flip-card-back {
   background-color: #1a191913;
-  color: black;
+  color: white;
   transform: rotateY(180deg);
 }
 button a {
@@ -140,6 +144,10 @@ button a {
   display: flex;
   flex-direction: row;
   background-color: rgb(0, 0, 0);
+  width:100%;
+}
+.navbar{
+  flex-direction:column;
 }
 .bar{
   /* justify-self: flex-end; */
@@ -159,13 +167,17 @@ ul {
   display:flex;
   list-style: none;
   right: 10px;
-  padding: .8rem;
+  align-items: center;
+  /* align-self: flex-end; */
+  justify-self: flex-end;
+  /* padding: .8rem; */
   /* position: absolute; */
   /* border: 2px solid red; */
 }
 ul > li {
+
   display: inline;
-  padding: 13px;
+  padding: 0 .6rem;
 }
 .links > .inside {
   color: white;
@@ -200,12 +212,14 @@ ul > li {
 form > h1{
   color: wheat;
   text-align: center;
+  /* margin: 0.3rem 0; */
 }
 form {
   width:100%;
   margin: auto;
   
-  padding: 0.7rem;
+  padding: 1rem;
+  padding-bottom:1.5rem ;
 }
 
 input {
@@ -214,8 +228,10 @@ input {
   padding: 0.6rem;
   width: 90%;
   border-style: none;
+  font-size:1rem;
 }
 button {
+  font-size:1rem;
   display: block;
   /* margin: auto; */
   border-radius: 0.3rem;
@@ -229,6 +245,13 @@ button {
 button:hover {
   background-color: red;
   color: white;
+}
+
+/* 1.Home */
+.home input,.home button {
+
+  width: 50%;
+
 }
 
 
@@ -255,8 +278,17 @@ button:hover {
     transition: all .3s;
     transform:translateX(-100%)
   }
+  .home input,.home button {
+
+    width: 90%;
+  
+  }
   .nav,.nav ul{
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav ul li{
+    padding: .7rem;
   }
   .show{
     transform:translateX(0%)

@@ -23,7 +23,7 @@ export const Home = () => {
         }
     }
     return (
-        <>
+        <div className="home">
             <input className='search' type='number' placeholder='Enter User Id(less than 944)' value={Id} onChange={(e)=>setId(e.target.value)}></input>
             <button onClick={TestMe}>Search</button>
             <div className="outcontain2">
@@ -31,6 +31,6 @@ export const Home = () => {
                     return (<Elements link={ele.link} title={ele.title} source={ele.source} go={ele.go} />);
                 })}
             </div>
-        </>
+        </div>
     )
 }
